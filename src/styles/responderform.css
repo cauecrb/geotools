@@ -1,0 +1,15 @@
+body{
+    align-items: center;
+    background-color: rgba(225, 226, 228, 0.993);
+    display: flex;
+    justify-content: center; 
+
+}
+
+
+
+
+input{
+    height: 3vw;
+    width: 97%;
+}

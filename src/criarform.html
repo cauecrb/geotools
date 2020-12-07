@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="./styles/criarform.css"screen" />
+
+    <title>Questionário Geotools</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div id="perguntas-form">
+        
+        <h1>Digite as questões para seu formulário</h1>
+        <form id="add-perguntas" name="formperguntas" method="POST">
+          
+          <label><br>Nome de seu formulário<br></label>  
+          <input type="text" id="nomeform" name="nomeform" placeholder="nome do formulário"></input>
+          <br>
+          <label><br>Seu nome<br></label>  
+          <input type="text" id="userName" placeholder="nome"></input>
+         
+          <div id="perguntas">
+            
+            <label><br>digite uma questão<br></label>           
+            <input type="text" name="questoes"  value="" placeholder="questão"></input> 
+         
+          </div>
+        </form>
+       </div>
+       <div id="div-botoes">
+         
+          <button type="button" id="nova-questao" value="adicionar pergunta">adicionar questão</button>
+          <button type="submit" id="salvar">salvar formulário</button>
+          
+          <a href="../public/index.html">
+            <button type="button" id="voltar">pagina inicial</button>
+          </a>
+        
+        </div>
+        <div>
+
+
+        </div>
+        <script src="./components/criarform.js" type="text/javascript"></script>
+        <script src="./components/salvar.js" type="text/javascript"></script>
+        <!-- <script>
+        $("#salvar").click(function(){
+          const nomeForm = document.getElementById('nomeform');
+          const nomeUsuario = document.getElementById('userName');
+          const perguntas = document.getElementsByName('questoes');
+      
+          console.log(perguntas.value);
+          console.log(nomeForm.value);
+        //  alert(perguntas.value)
+          alert(nomeForm.value + nomeUsuario.value)
+        //  alert(JSON.stringify(perguntas));
+      });
+    </script> -->
+        <h5>nao esquecer de pegar a data de criação</h5>
+      </div>
+  </body>
+</html>

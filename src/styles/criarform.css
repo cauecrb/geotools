@@ -1,0 +1,20 @@
+body{
+    align-items: center;
+    background-color: rgba(225, 226, 228, 0.993);
+    display: flex;
+    justify-content: center; 
+
+}
+
+#perguntas-form{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: rgb(216, 215, 221);
+}
+
+
+input{
+    height: 3vw;
+    width: 97%;
+}
